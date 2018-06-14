@@ -688,4 +688,71 @@ div.panel.show {
 .overline-menu{
 	text-decoration: underline;
 }
+.centro{
+	margin: 0 auto;
+}
+
+#carousel {	
+	margin:0 auto;
+}
+
+#slides {
+	overflow: hidden;
+	position: relative;
+
+}
+
+#slides ul {	
+	height:160px;
+	margin: 0;
+	padding: 0;	
+}
+
+#slides li {
+	height:160px;	
+	text-align: center;	
+}
+/* Styling for prev and next buttons */
+.btn-bar{    
+    margin: 0 auto;
+    display: block;    
+    top: 40px;    
+}
+
+.botones {
+	padding:0 0 5px 0;
+}
+
+.botones a {
+	text-align:center;
+	display:block;
+	font-size:50px;
+	outline:0;
+	display:block;
+	padding:9px;
+}
+
+a#prev:hover, a#next:hover {
+	color:black;
+	text-shadow:.5px 0px #b14943;  
+}
+
+.quote-phrase, .quote-author {		
+	display: table-cell;
+	vertical-align: middle;
+	padding: 5px 20px;	
+}
+
+.quote-marks {	
+	padding:0 3px 3px;
+	position:inherit;
+}
+
+.quote-author {
+	font-weight:400;
+	height: 30px;
+}
+
+.quoteContainer, .authorContainer {
+	display: table;
 }
