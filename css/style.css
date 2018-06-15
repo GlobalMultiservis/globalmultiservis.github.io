@@ -519,7 +519,7 @@ div.panel.show {
 }
 .single_portfolio_img img{
     width:100%;
-    height: 230px;
+    height: 250px;
 }
 .single_portfolio_img:hover .mixi_portfolio_overlay{
     opacity:1;
