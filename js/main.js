@@ -3,7 +3,7 @@ jQuery(document).ready(function () {
 //Preloader active
     jQuery(window).load(function () {
         jQuery(".loaded").fadeOut();
-        jQuery(".preloader").delay(1000).fadeOut("slow");
+        jQuery(".preloader").delay(1000).fadeOut("slow");		
     });
 
 // sidenav navbar nav
@@ -57,11 +57,13 @@ jQuery(document).ready(function () {
     jQuery(document).on("scroll", function () {
         if ($(document).scrollTop() > 120) {
             $("nav").addClass("small");
+            $("#multiservis-logo").addClass("nav-logo");
+
         } else {
             $("nav").removeClass("small");
+            $("#multiservis-logo").removeClass("nav-logo");
         }
     });
-
 
 });
 
