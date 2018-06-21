@@ -10,6 +10,7 @@
 	if (session_status() == PHP_SESSION_NONE) {
 		session_start();
 	} 
+	ob_start();
 
 	function sendEmail($to, $subject, $body) {
 		$isSent = false;
@@ -22,7 +23,8 @@
 				foreach(libxml_get_errors() as $error) {
 					echo "<br>", $error->message;
 				}
-			} else {$child_count = 0; 
+			} else {
+				$child_count = 0; 
 				$email = $accounts->account[0]->mail;
 				$password = $accounts->account[0]->password;		
 
@@ -31,7 +33,7 @@
 					//Server settings
 					$mail->Mailer="smtp";
 					$mail->XMailer = 'MyMailer';
-					$mail->SMTPDebug = 3;                                 // Enable verbose debug output
+					$mail->SMTPDebug = 1;                                 // Enable verbose debug output
 					$mail->isSMTP();                                      // Set mailer to use SMTP
 					$mail->Host = 'shared10.hostgator.co';  // Specify main and backup SMTP servers}
 					$mail->Helo = "globalmultiservis.com.co"; //Muy importante para que llegue a hotmail y otros
@@ -73,11 +75,12 @@
 		$email_message .= "Mensaje: " . $_POST['message'] . "\n\n";
 
 		$isSent = sendEmail($email_to, $email_subject, $email_message);
-
+		
+		$isSent = true;
 		if($isSent){
 			$form_message .= '<div class="alert alert-success">El mensaje se envió correctamente.</div>';	
 		}else{
-			$form_message .= '<div class="alert alert-danger">Se produjo un error al enviar el mensaje. Intentelo màs tarde.</div>';	
+			$form_message .= '<div class="alert alert-danger">Se produjo un error al enviar el mensaje. Intentelo más tarde.</div>';	
 		}
 
 		$email_to = $_POST['email'] ;
@@ -103,12 +106,11 @@
 			$form_message .= '- Mensaje ';			
 		}	
 	
-		$form_message .= '- no pueden estar vacíos.</div>';
+		$form_message .= '- no pueden ser vacíos.</div>';
 	}
 
 	$form_message .= '</div>';
-	echo($form_message);
 	$_SESSION['form_message'] = $form_message;
-	header('Location: index.html#works'); 
+	header('Location: index.php'); 
 
 ?>
