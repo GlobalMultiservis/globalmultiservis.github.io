@@ -110,20 +110,23 @@
     <div id="home">
         <div class="container containerC">
             <ul class="mySlideshow">
-                <li class="first">
-                    <a href="http://www.harley-davidson.com" target="_blank" class="animated fadeInLeft">
-                        <!--<img src="img/hd-logo.png" width="600" height="255" alt="Harley-Davidson">-->
-                    </a>
-                    <!--<div class="animated fadeInRight">It's time to ride!</div>-->
+                <li class="first textCar">
+                    <div class="col-xs-12">
+                        <a class="animated fadeInLeft">
+                            <img src="img/hd-logo.png" class="img-fluid centro" alt="Global Multiservis">
+                        </a>
+                        
+                    </div>
+                   
                 </li>
-                <li class="second">
-                    <!--<img src="img/second-title.png" class="animated fadeInRight">-->
+                <li class="second textCar">
+                    <div class="animated fadeInRight textCarousel">Fabricación y mantenimiento de plantas para el tratamiento de aguas.</div>
                 </li>
-                <li class="third">
-                    <!--<img src="img/third-title.png" class="animated fadeInLeft">-->
+                <li class="third textCar">
+                    <div class="animated fadeInRight textCarousel">Lo hacemos simple y seguro.</div>
                 </li>
             </ul>
-        </div>        
+        </div>
     </div>
     <section id="about" class="about">
         <div class="main_joinus_area m-y-3">
@@ -131,7 +134,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="main_joinus_content center white-text wow fadeInUp">
-                            <img src="img/logoC.png" class="img-fluid centro" alt="Responsive image">
+                            <img src="img/logoC.png" class="img-fluid centro" alt="Global Multiservis">
                             <!-- <img src="img/logoC.png" alt="" /> -->
                             <h2 class="text-uppercase m-b-3">Nosotros</h2>
                             <p>
