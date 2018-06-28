@@ -9,6 +9,11 @@ jQuery(document).ready(function () {
         });		
     });
 
+    jQuery('.mySlideshow').edslider({
+        width: '100%',
+        height: 500
+    });
+
 // sidenav navbar nav
     jQuery(".button-collapse").sideNav();
 

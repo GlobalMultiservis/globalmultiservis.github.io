@@ -40,6 +40,10 @@
     <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' type='text/css'>
+    <link rel="stylesheet" href="css/edslider.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/animate-custom.css">
 
 </head>
 
@@ -102,44 +106,24 @@
             </div>
         </div>
     </nav>
-    <!--/.Navbar-->
-
-    <div id="home" class="slider">
-        <ul class="slides">
-            <li>
-                <img src="img/homebanner1.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                    <div class="single_home">
-                        <h1>Global</h1>
-                        <h1>Multiservis</h1>
-                        <p>Fabricación y mantenimiento de plastas para el tratamiento de aguas.</p>
-                        <!-- <button type="button" class="btn btn-danger m-t-3 waves-effect waves-red">See More</button> -->
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="img/homebanner2.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                    <div class="single_home">
-                        <h1>Global</h1>
-                        <h1>Multiservis</h1>
-                        <p>Fabricación y mantenimiento de plastas para el tratamiento de aguas.</p>
-                        <!-- <button type="button" class="btn btn-danger m-t-3 waves-effect waves-red">See More</button> -->
-                    </div>
-                </div>
-            </li>
-            <li>
-                <img src="img/homebanner3.jpg"> <!-- random image -->
-                <div class="caption center-align">
-                    <div class="single_home">
-                        <h1>Global</h1>
-                        <h1>Multiservis</h1>
-                        <p>Fabricación y mantenimiento de plastas para el tratamiento de aguas.</p>
-                        <!-- <button type="button" class="btn btn-danger m-t-3 waves-effect waves-red">See More</button> -->
-                    </div>
-                </div>
-            </li>
-        </ul>
+    <!--/.Navbar-->    
+    <div id="home">
+        <div class="container containerC">
+            <ul class="mySlideshow">
+                <li class="first">
+                    <a href="http://www.harley-davidson.com" target="_blank" class="animated fadeInLeft">
+                        <!--<img src="img/hd-logo.png" width="600" height="255" alt="Harley-Davidson">-->
+                    </a>
+                    <!--<div class="animated fadeInRight">It's time to ride!</div>-->
+                </li>
+                <li class="second">
+                    <!--<img src="img/second-title.png" class="animated fadeInRight">-->
+                </li>
+                <li class="third">
+                    <!--<img src="img/third-title.png" class="animated fadeInLeft">-->
+                </li>
+            </ul>
+        </div>        
     </div>
     <section id="about" class="about">
         <div class="main_joinus_area m-y-3">
@@ -704,7 +688,7 @@
                                         <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                                         <div class="col-md-8">
                                             <textarea class="form-control" id="message" name="message"
-                                                      placeholder="   Mensaje..." rows="7"></textarea>
+                                                        placeholder="   Mensaje..." rows="7"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -719,7 +703,7 @@
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
         </div>
         <hr />
     </section><!-- End of Team section -->
@@ -795,42 +779,44 @@
 
 
 
-    <!-- /Start your project here-->
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/tether.min.js"></script>
+        <!-- /Start your project here-->
+        <!-- SCRIPTS -->
+        <!-- JQuery -->
+        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="js/tether.min.js"></script>
 
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Wow js -->
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <!-- Mixitup js -->
-    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-    <!-- Magnific-popup js -->
-    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-    <!-- accordion js -->
-    <script type="text/javascript" src="js/accordion.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/materialize.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/mdb.min.js"></script>
+        <!-- Wow js -->
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <!-- Mixitup js -->
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+        <!-- Magnific-popup js -->
+        <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+        <!-- accordion js -->
+        <script type="text/javascript" src="js/accordion.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="js/materialize.js"></script>
 
-    <script type="text/javascript" src="js/globalservice.js"></script>
+        <script type="text/javascript" src="js/globalservice.js"></script>
 
-    <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANVLyrbPJI8DahFCK-_NenbD973Zw5lvI&callback=initMap">
-    </script>
-    <script>
-        $(".button-collapse").sideNav();
-    </script>
-    <!-- wow js active -->
-    <script type="text/javascript">
-        new WOW().init();
-    </script>
-    <script type="text/javascript" src="js/plugins.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANVLyrbPJI8DahFCK-_NenbD973Zw5lvI&callback=initMap">
+        </script>
+        <script>
+            $(".button-collapse").sideNav();
+        </script>
+        <!-- wow js active -->
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/jquery.edslider.js"></script>
+
 
 </body>
 

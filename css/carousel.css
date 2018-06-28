@@ -1,0 +1,125 @@
+
+.btn{
+	background:#FD6403;
+	border-radius:5px;
+	border: 0;
+	color:#fff;
+	display:inline-block;
+	font-family:"open sans condensed", sans-serif;
+	line-height:30px;
+	height: 30px;
+	padding:0 10px;
+	text-decoration:none;
+	transition:.25s;
+}
+.btn:hover{
+	background:#fff;
+	color:#FD6403;
+	cursor: pointer;
+}
+.btn.download{
+	font-size:20px;
+	font-weight:bold;
+	line-height:50px;
+	height: 50px;
+	padding:0 20px;
+}
+header{
+	margin:0 auto 40px;
+}
+header .logo{
+	display: block;
+	float: left;
+}
+header .btn.download{
+	margin-top: 10px;
+}
+header,
+.containerC {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.containerC {
+    margin: auto;
+    padding: 0px;
+}
+.mySlideshow .animated{
+	position:absolute;
+}
+.first{
+	background:url("../img/first.jpg") center no-repeat;
+}
+.first a,
+.first img{
+	display:block;
+}
+.first a{
+	top:80px;
+	left:39%;
+	margin-left:-165px;
+}
+.first div{
+	font-family:'Open Sans Condensed', sans-serif;
+	font-size:50px;
+	bottom:80px;
+	left:39%;
+	width:320px;
+	text-align:center;
+	margin-left:-160px;
+}
+.second{
+	background:url("../img/second.jpg") center no-repeat;
+}
+.second img{
+	top: 160px;
+	right: 19%;
+}
+.third {
+    background: url("../img/third.jpg") center no-repeat;
+}
+.third img{
+	top:100px;
+	left: 23%;
+}
+.fourth {
+    background: url("../img/fourth.jpg") center no-repeat;
+}
+.fourth img{
+	top:320px;
+	right:8%;
+}
+.fifth {
+    background: url("../img/fifth.jpg") center no-repeat;
+}
+.fifth img{
+	top:120px;
+	left:21%;
+}
+table{
+	background: #272727;
+	border-collapse:collapse;
+	width: 100%;
+}
+table tbody tr:nth-child(odd){
+	background-color: #222;
+}
+table td,
+table th{
+	padding:10px;
+	text-align:left;
+}
+table th,
+.link{
+	color:#FD6403;
+}
+.float-right{
+	float:right;
+}
+.float-left{
+	float:left;
+}
+.icon{
+	vertical-align: middle;
+	margin-right: 5px;
+}
