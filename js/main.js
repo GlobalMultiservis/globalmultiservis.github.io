@@ -10,8 +10,7 @@ jQuery(document).ready(function () {
     });
 
     jQuery('.mySlideshow').edslider({
-        width: '100%',
-        height: 500
+        width: '100%'
     });
 
 // sidenav navbar nav

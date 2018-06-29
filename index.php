@@ -1,16 +1,15 @@
-﻿<?php
-//	header("Content-Type: text/html;charset=utf-8");
+<?php
 	if (session_status() == PHP_SESSION_NONE) {
 		session_start();
 	}
-
+	ob_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
-    <meta charset="utf-8">
+    <meta charset="ISO-8859-1">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--<meta http-equiv="x-ua-compatible" content="ie=edge">-->
 
@@ -77,7 +76,7 @@
                         <a class="nav-link" href="#team">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#works">Contactenos</a>
+                        <a class="nav-link" href="#works">Contáctenos</a>
                     </li>
                 </ul>
             </div>
@@ -100,29 +99,29 @@
                         <a class="nav-link" href="#team">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#works">Contactenos</a>
+                        <a class="nav-link" href="#works">Contáctenos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!--/.Navbar-->    
+    <!--/.Navbar-->
     <div id="home">
         <div class="container containerC">
-            <ul class="mySlideshow">
-                <li class="first textCar">
+            <ul class="mySlideshow heightCarousel">
+                <li class="first textCar heightCarousel">
                     <div class="col-xs-12">
                         <a class="animated fadeInLeft">
                             <img src="img/hd-logo.png" class="img-fluid centro" alt="Global Multiservis">
                         </a>
-                        
+
                     </div>
-                   
+
                 </li>
-                <li class="second textCar">
+                <li class="second textCar heightCarousel">
                     <div class="animated fadeInRight textCarousel">Fabricación y mantenimiento de plantas para el tratamiento de aguas.</div>
                 </li>
-                <li class="third textCar">
+                <li class="third textCar heightCarousel">
                     <div class="animated fadeInRight textCarousel">Lo hacemos simple y seguro.</div>
                 </li>
             </ul>
@@ -154,7 +153,7 @@
     </section> <!-- End of JoinUs section -->
     <section id="service" class="portfolio">
         <div class="container">
-            <hr /> <hr />
+            <hr />
             <div class="row">
                 <div class="main_portfolio_area m-y-3">
                     <div class="head_title center wow fadeInUp">
@@ -304,7 +303,7 @@
 
     <section id="plantas" class="portfolio">
         <div class="container">
-            <hr /> <hr />
+            <hr />
             <div class="row">
                 <div class="main_portfolio_area m-y-3">
                     <div class="head_title center wow fadeInUp">
@@ -691,7 +690,7 @@
                                         <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
                                         <div class="col-md-8">
                                             <textarea class="form-control" id="message" name="message"
-                                                        placeholder="   Mensaje..." rows="7"></textarea>
+                                                      placeholder="   Mensaje..." rows="7"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -782,43 +781,43 @@
 
 
 
-        <!-- /Start your project here-->
-        <!-- SCRIPTS -->
-        <!-- JQuery -->
-        <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-        <!-- Bootstrap tooltips -->
-        <script type="text/javascript" src="js/tether.min.js"></script>
+    <!-- /Start your project here-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/tether.min.js"></script>
 
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="js/mdb.min.js"></script>
-        <!-- Wow js -->
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <!-- Mixitup js -->
-        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-        <!-- Magnific-popup js -->
-        <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-        <!-- accordion js -->
-        <script type="text/javascript" src="js/accordion.js"></script>
-        <!-- MDB core JavaScript -->
-        <script type="text/javascript" src="js/materialize.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Wow js -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- Mixitup js -->
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <!-- Magnific-popup js -->
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+    <!-- accordion js -->
+    <script type="text/javascript" src="js/accordion.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/materialize.js"></script>
 
-        <script type="text/javascript" src="js/globalservice.js"></script>
+    <script type="text/javascript" src="js/globalservice.js"></script>
 
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANVLyrbPJI8DahFCK-_NenbD973Zw5lvI&callback=initMap">
-        </script>
-        <script>
-            $(".button-collapse").sideNav();
-        </script>
-        <!-- wow js active -->
-        <script type="text/javascript">
-            new WOW().init();
-        </script>
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script type="text/javascript" src="js/jquery.edslider.js"></script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANVLyrbPJI8DahFCK-_NenbD973Zw5lvI&callback=initMap">
+    </script>
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
+    <!-- wow js active -->
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.edslider.js"></script>
 
 
 </body>

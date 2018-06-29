@@ -10,7 +10,7 @@
 
 		var defaults = {
 			width:960,
-			height:400,
+			height:550,
 			position:1,
 			interval:3000,
 			speed:700,
